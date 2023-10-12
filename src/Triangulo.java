@@ -1,4 +1,4 @@
-public class Triangulo implements FiguraGeometrica {
+public class Triangulo implements figuraGeometrica {
     private double base;
     private double altura;
 
