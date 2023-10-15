@@ -10,7 +10,7 @@ public class Rectangulo implements figuraGeometrica {
 
     // Implementación del método calcularArea de la interfaz FiguraGeometrica
     @Override
-    public void calcularArea() {
+    public double calcularArea() {
         return longitud * ancho;
     }
 }
