@@ -1,14 +1,21 @@
-import java.util.Scanner;
-
 public class Cuadrado implements figuraGeometrica {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    private double lado;
 
-        System.out.print("Ingresa la longitud de un lado del cuadrado: ");
-        double lado = scanner.nextDouble();
-        double area = lado * lado;
-
-        System.out.println("El área del cuadrado es: " + area);
-        scanner.close();
+    public double getLado() {
+        return lado;
     }
+
+    public void setLado(double lado) {
+        this.lado = lado;
+    }
+
+    public Cuadrado(double lado) {
+        this.lado = lado;
+    }
+
+    @Override
+    public double calcularArea() {
+        return lado * lado;
+    }
+    
 }
