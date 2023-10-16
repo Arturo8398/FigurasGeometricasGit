@@ -22,6 +22,4 @@ public class Rectangulo implements figuraGeometrica{
     public double calcularArea() {
         return longitud * altura;
     }
-
-    
 }
